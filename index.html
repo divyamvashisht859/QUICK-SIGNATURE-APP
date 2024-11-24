@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon-16x16.png">
+</head>
+<body>
+    <div class="main">
+         <div class="top">
+            <div class="block">
+                <p>Text color picker</p>
+                <input class="form-control" type="color" id="colorPicker">
+            </div>
+            <div class="block">
+                <p>Background</p>
+                <input class="form-control" type="color" id="canvascolor">
+
+            </div>
+            <div class="block">
+                <p>Font Size</p>
+                <select id="fontsize">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="20">20px</option>
+                    <option value="30">30px</option>
+                    <option value="40">40px</option>
+                    <option value="50">50px</option>
+                </select>
+
+            </div>
+        </div>
+        <canvas class="canvas" id="myCanvas" width="800" height="500"></canvas>
+        <div class="bottom">
+            <button type="button"  id="clearButton">clear</button>
+            <button type="button"  id="saveButton">save & download</button>
+            <button type="button"  id="retrieveButton">Retrieve saved signature</button>
+            
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
